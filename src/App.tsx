@@ -15,12 +15,21 @@ function App () {
   return (
     <div className={styles.App}>
 
-      <button onClick={showReact} className={styles.Click}>star</button>
+      <button
+        data-testid='show-btn'
+        onClick={showReact}
+        className={styles.Click}
+      >
+          star
+      </button>
       <img src={logo} className={styles.AppLogo} alt="logo" />
 
       {
         isShow
-          ? <><h1>Happy hacking!{counter}</h1> <button onClick={setCount}>count</button></>
+          ? <div data-testid='the-div'>
+            <h1 className={styles.h1} data-testid='header'>Happy hacking!{counter}</h1>
+            <button data-testid='count-btn' onClick={setCount}>count</button>
+          </div>
           : null
       }
 

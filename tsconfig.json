@@ -16,7 +16,7 @@
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
-    "module": "esnext",
+    "module": "ESNext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
@@ -24,7 +24,9 @@
     "jsx": "react-jsx"
   },
   "include": [
-    "src"
+    "src",
+    "tests/mocks",
+    "tests/setupTests.ts"
   ],
   "exclude": [
     "node_modules"

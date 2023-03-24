@@ -1,5 +1,5 @@
 import { configureStore, combineReducers } from '@reduxjs/toolkit';
-import showSlice from '../reducers/ExampleSlice'
+import showSlice from '../reducers/ExampleSlice';
 
 const rootReducer = combineReducers({
   showSlice
